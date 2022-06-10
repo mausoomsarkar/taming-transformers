@@ -475,6 +475,8 @@ if __name__ == "__main__":
                 "filename": "{epoch:06}",
                 "verbose": True,
                 "save_last": True,
+                "save_top_k":8,
+                "monitor":'val/aeloss_epoch',
             }
         }
         if hasattr(model, "monitor"):
